@@ -1,3 +1,9 @@
+/*Chamando a fonte definida no figma*/
+@font-face {
+    font-family: 'Raleway';
+    src: url(../font/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
 .cabecalho {
     height: 72px; /*Define a altura do cabeçalho, determinada no figma*/
     display: flex;
@@ -19,4 +25,60 @@
     border: 1px solid #2A7AE4;
     color: #2A7AE4;
     font-weight: bold;
+}
+
+/*Define a imagem de fundo do baner e transforma os itens dentro a section em Flex items*/
+.banner {
+    background-image: url("/img/Banner__mobile.png");
+    width: 100vw;
+    height: 192px;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+/*Configurações do titulo do banner*/
+.banner__titulo {
+    font-family: "Raleway";
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 16px 0 16px;
+    
+    /*Text shadow responsavel por adicionar borda em volta da fonte*/
+    text-shadow: 
+    -1px -1px 0px #000000, 
+    -1px 1px 0px #000000,      
+     1px -1px 0px #000000,    
+     1px 0px 0px #000000;
+}
+
+/*Configuração do paragrafo do banner*/
+.banner__promo {
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0 16px 0 16px;
+}
+
+/*Configuração do botão do baner*/
+.banner__botao {
+    width: 119px;
+    height: 40px;
+    margin: 0 0 16px 16px;
+    background-color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+}
+
+/*Cnfiguraçoes do link do botão*/
+.banner__botao a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 600;
 }
