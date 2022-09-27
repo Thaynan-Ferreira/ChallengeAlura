@@ -1,0 +1,22 @@
+.cabecalho {
+    height: 72px; /*Define a altura do cabeçalho, determinada no figma*/
+    display: flex;
+    justify-content: space-around; /*Define a forma do espaçamento entre os itens do cabeçalho*/
+    align-items: center;
+}
+
+/*faz a configuração da logo da pagina*/
+.logo__pagina {
+    display: flex;
+    align-items: center;
+}
+
+/*Define a configuração de tamanho e cor do botão de login*/
+.botao__login {
+    width: 133px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    font-weight: bold;
+}
