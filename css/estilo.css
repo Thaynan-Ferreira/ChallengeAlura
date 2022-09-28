@@ -82,3 +82,86 @@
     font-size: 14px;
     font-weight: 600;
 }
+
+/*Define o espacamento interno da seção onde aparecerão os produtos*/
+.produtos {
+    padding: 16px 8px 16px 16px;
+}
+
+/*Condifgura o titulo da seção de produtos*/
+.produtos__titlulo {
+    font-family: "Raleway";
+    color: #464646;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/*Configura o botão que levara para a pagina com todos os produtos da seção*/
+.produtos__botao {
+    background-color: #FFFFFF;
+    height: 26px;
+    border: none;
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+
+/*Configura o texto do link*/
+.produtos__botao a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #2A7AE4;
+}
+
+
+/*Transformando o artigo em um grid container */
+.produtos__starwars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.produtos__starwars--lista {
+    grid-column: span 2; /*Fazendo com que o ul ocupe as duas colunas do grid pois ele ja é um grid por si so*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;   
+}
+
+/*Define o card do produto como flex container, ja que todas as informações estão dispostas em uma unica coluna*/
+.produto {
+    display: flex;
+    flex-direction: column;
+    width: 156px;
+    row-gap: 8px;
+    margin-bottom: 8px;
+}
+
+/*Configura o texto da discrição do produto*/
+.produto__descricao {
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 500;
+    color: #464646;
+}
+
+/*Configura o texto do preço do produto*/
+.produto__preco {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 700;
+    color: #464646;
+}
+
+/*Consigura o texto do link que leva ate a pagina do produto*/
+.produto__link {
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #2A7AE4;
+}
