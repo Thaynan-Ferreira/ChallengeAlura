@@ -85,7 +85,7 @@
 
 /*Define o espacamento interno da seção onde aparecerão os produtos*/
 .produtos {
-    padding: 16px 8px 16px 16px;
+    padding: 0 8px 16px 16px;
 }
 
 /*Condifgura o titulo da seção de produtos*/
@@ -120,12 +120,14 @@
 
 
 /*Transformando o artigo em um grid container */
-.produtos__starwars {
+.secao__produtos {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 16px;
+    padding-bottom: 8px;
 }
 
-.produtos__starwars--lista {
+.produtos__lista {
     grid-column: span 2; /*Fazendo com que o ul ocupe as duas colunas do grid pois ele ja é um grid por si so*/
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,4 +166,10 @@
     font-weight: 700;
     text-decoration: none;
     color: #2A7AE4;
+}
+
+@media screen and (max-width: 360px) {
+    .produto__5, .produto__6 {
+        display: none;
+    }
 }
