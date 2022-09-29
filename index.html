@@ -11,15 +11,20 @@
 </head>
 <body>
     <header class="cabecalho">
-        <h1>
-            <ul class="logo__pagina">
-                <li class="logo__pagina--logo"><img src="img/logo.png" alt="Logo da empresa"></li>
-                <li class="logo__pagina--alura"><img src="img/Alura.png" alt="Logo da empresa"></li>
-                <li class="logo__pagina--geek"><img src="img/Geek.png" alt=""></li>
-            </ul>
-        </h1>
+        <div class="direita">
+            <h1>
+                <ul class="logo__pagina">
+                    <li class="logo__pagina--logo"><img src="img/logo.png" alt="Logo da empresa"></li>
+                    <li class="logo__pagina--alura"><img src="img/Alura.png" alt="Logo da empresa"></li>
+                    <li class="logo__pagina--geek"><img src="img/Geek.png" alt=""></li>
+                </ul>
+            </h1>
+            <label for="pesquisa" class="float__label--pesquisa"><button class=pesquisa><img src="img/lupa.png" alt=""></button></label>
+            <input type="text" name="pesquisa" id="pesquisa" class="pesquisa pesquisa__caixa" placeholder="O que deseja encontrar?">
+        </div>
+
         <button class="botao__login">Login</button>
-        <img src="img/lupa.png" alt="Lupa de busca">
+        <img src="img/lupa__mobile.png" alt="Lupa de busca" class="lupa__mobile">
     </header>
     <main>
         <section class="banner">
