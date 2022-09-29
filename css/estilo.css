@@ -168,8 +168,112 @@
     color: #2A7AE4;
 }
 
+/*Media query adicionada para que os itens 5 e 6 nao aparecam na versão mobile, pois são itens que so aparecem na versção desktop*/
 @media screen and (max-width: 360px) {
     .produto__5, .produto__6 {
         display: none;
     }
+}
+
+/*Devine o espaçamento minimo que os elementos tem que ter dentro do footer e ja adiciona o background do fale conosco*/
+.rodape {
+    padding: 16px;
+    background-color: #EAF2FD;
+}
+
+/*Define a lista de link como um flax container e define os espaçamentos e posição desses links*/
+.lista__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/*Configuração dos links da lista*/
+.lista__link a {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #464646;
+
+}
+
+/*Define o formulario como flex container e define os espaçamentos e posições dos itens*/
+.fale__conosco {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/*Configura o titulo do formulario*/
+.fale__conosco--titulo{
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 700;
+    color: #464646;
+}
+
+/*Define as configurações da caixa que recebe o nome*/
+.nome {
+    width: 320px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.16);
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 8px;
+    
+}
+
+/*Configura o label que se mantem na caixa enquanto se digita o nome*/
+.float__label{
+    position: absolute;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 12px;
+    margin: 32px 12px 0 10px;
+    color: #A2A2A2;
+
+}
+
+/*Define as configurações da caixa que recebe a mensagem*/
+.input-padrao {
+    width: 320px;
+    height: 66px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 8px;
+    padding-top: 16px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.16);
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+/*Configura o placehouder que aparece na caixa da mensagem*/
+.input-padrao::placeholder{
+    position: absolute;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px 4px;
+    color: #A2A2A2;
+}
+
+/*Configura o botão de enviar*/
+.enviar {
+    width: 151px;
+    height: 40px;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+    border: none;
+
 }
