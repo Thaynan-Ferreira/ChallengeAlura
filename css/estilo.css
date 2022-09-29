@@ -277,3 +277,20 @@
     border: none;
 
 }
+
+.copy{
+    display: flex;
+    width: 360px;
+    height: 102px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.copy p {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    color: #464646;
+}
