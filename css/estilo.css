@@ -173,7 +173,7 @@
 }
 
 /*Media query adicionada para que os itens 5 e 6 nao aparecam na versão mobile, pois são itens que so aparecem na versção desktop*/
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
     .produto__5, .produto__6 {
         display: none;
     }
@@ -375,5 +375,50 @@
         height: 40px;
         margin: 0 0 32px 32px;
     }
+
+    /*Define o espacamento interno da seção onde aparecerão os produtos*/
+    .produtos {
+        padding: 0 16px 32px 32px;
+    }
     
+    /*Transformando o artigo em um grid container */
+    .secao__produtos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 32px;
+        padding-bottom: 16px;
+    }
+
+    .produtos__lista {
+        grid-column: span 4; /*Fazendo com que o ul ocupe as duas colunas do grid pois ele ja é um grid por si so*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 8px;   
+    }
+    /*Condifgura o titulo da seção de produtos*/
+    .produtos__titlulo {
+        grid-column: span 3;
+    }
+
+    /*Devine o espaçamento minimo que os elementos tem que ter dentro do footer e ja adiciona o background do fale conosco*/
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+        padding: 32px;
+        background-color: #EAF2FD;
+    }
+
+    .input-padrao, .nome {
+        width: 434px;
+    }
+
+    .lista__link {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .copy{
+        width: 100vw;
+    }
 }
