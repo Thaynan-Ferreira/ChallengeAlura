@@ -4,32 +4,6 @@
     src: url(../font/Raleway/Raleway-VariableFont_wght.ttf);
 }
 
-.cabecalho {
-    height: 72px; /*Define a altura do cabeçalho, determinada no figma*/
-    display: flex;
-    justify-content: space-around; /*Define a forma do espaçamento entre os itens do cabeçalho*/
-    align-items: center;
-}
-
-/*faz a configuração da logo da pagina*/
-.logo__pagina {
-    display: flex;
-    align-items: center;
-}
-
-/*Define a configuração de tamanho e cor do botão de login*/
-.botao__login {
-    width: 133px;
-    height: 40px;
-    background-color: #FFFFFF;
-    border: 1px solid #2A7AE4;
-    color: #2A7AE4;
-    font-weight: bold;
-}
-
-.pesquisa {
-    display: none;
-}
 
 /*Define a imagem de fundo do baner e transforma os itens dentro a section em Flex items*/
 .banner {
@@ -179,179 +153,7 @@
     }
 }
 
-/*Devine o espaçamento minimo que os elementos tem que ter dentro do footer e ja adiciona o background do fale conosco*/
-.rodape {
-    padding: 16px;
-    background-color: #EAF2FD;
-}
-
-/*Define a lista de link como um flax container e define os espaçamentos e posição desses links*/
-.lista__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-
-/*Configuração dos links da lista*/
-.lista__link a {
-    font-family: "Raleway";
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #464646;
-
-}
-
-.lista__link a:hover {
-    color: #2A7AE4;
-}
-
-/*Define o formulario como flex container e define os espaçamentos e posições dos itens*/
-.fale__conosco {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-/*Configura o titulo do formulario*/
-.fale__conosco--titulo{
-    font-family: "Raleway";
-    font-size: 16px;
-    font-weight: 700;
-    color: #464646;
-}
-
-/*Define as configurações da caixa que recebe o nome*/
-.nome {
-    width: 320px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.16);
-    font-family: "Raleway";
-    font-weight: 400;
-    font-size: 16px;
-    padding-left: 8px;
-    
-}
-
-/*Configura o label que se mantem na caixa enquanto se digita o nome*/
-.float__label{
-    position: absolute;
-    font-family: "Raleway";
-    font-weight: 400;
-    font-size: 12px;
-    margin: 32px 12px 0 10px;
-    color: #A2A2A2;
-
-}
-
-/*Define as configurações da caixa que recebe a mensagem*/
-.input-padrao {
-    width: 320px;
-    height: 66px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 8px;
-    padding-top: 16px;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.16);
-    font-family: "Raleway";
-    font-weight: 400;
-    font-size: 16px;
-    padding-left: 8px;
-}
-
-/*Configura o placehouder que aparece na caixa da mensagem*/
-.input-padrao::placeholder{
-    position: absolute;
-    font-family: "Raleway";
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0px 4px;
-    color: #A2A2A2;
-}
-
-/*Configura o botão de enviar*/
-.enviar {
-    width: 151px;
-    height: 40px;
-    font-family: "Raleway";
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    color: #FFFFFF;
-    background-color: #2A7AE4;
-    border: none;
-
-}
-
-.copy{
-    display: flex;
-    width: 360px;
-    height: 102px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-}
-
-.copy p {
-    font-family: "Raleway";
-    font-size: 16px;
-    font-weight: 500;
-    color: #464646;
-}
-
 @media screen and (min-width: 768px) {
-
-    .lupa__mobile {
-        display: none;
-    }
-
-    .direita {
-        display: flex;
-        width: 404px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .pesquisa {
-        display: block;
-    }
-
-    .pesquisa__caixa {
-        width: 272px;
-        height: 40px;
-        border-radius: 20px;
-        background-color: #F5F5F5;
-        border: none;
-    }
-
-    .pesquisa__caixa::placeholder {
-        font-family: "Raleway";
-        font-size: 14px;
-        font-weight: 400;
-        color: #A2A2A2;
-    }
-
-    .float__label--pesquisa{
-        position: relative;
-        left: 260px;
-        
-    }
-
-    .float__label--pesquisa button {
-        border: none;
-        background-color: #ffffff00;
-        width: 24px;
-        height: 24px;
-        ;
-    }
-
-    .botao__login {
-        width: 166px;
-    }
 
     .banner{
         background-image: url("/img/Banner__tablet.png");
@@ -400,27 +202,7 @@
         grid-column: span 3;
     }
 
-    /*Devine o espaçamento minimo que os elementos tem que ter dentro do footer e ja adiciona o background do fale conosco*/
-    .rodape {
-        display: flex;
-        justify-content: space-between;
-        height: 300px;
-        padding: 32px;
-        background-color: #EAF2FD;
-    }
-
-    .input-padrao, .nome {
-        width: 434px;
-    }
-
-    .lista__link {
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    .copy{
-        width: 100vw;
-    }
+    
 }
 
 @media screen and (min-width: 1440px) {
@@ -468,22 +250,5 @@
         grid-column: 2;  
     }
 
-    /*Devine o espaçamento minimo que os elementos tem que ter dentro do footer e ja adiciona o background do fale conosco*/
-    .rodape {
-        display: flex;
-        justify-content: space-between;
-        height: 300px;
-        padding: 64px 152px;
-        background-color: #EAF2FD;
-    }
-
-    .lista__link {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 112px;
-    }
-
-    .logo__rodape {
-        grid-row: span 6;
-    }
+    
 }
