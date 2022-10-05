@@ -441,4 +441,49 @@
         margin: 0 0 32px 152px;
         height: 51px;
     }
+
+    /*Define o espacamento interno da seção onde aparecerão os produtos*/
+    .produtos {
+        padding: 0 16px 32px 152px;
+    }
+    
+    /*Transformando o artigo em um grid container */
+    .secao__produtos {
+        width: 1013px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin-top: 64px;
+        padding-bottom: 16px;
+    }
+
+    .produtos__lista {
+        width: 176px;
+        grid-column: span 6; /*Fazendo com que o ul ocupe as duas colunas do grid pois ele ja é um grid por si so*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 16px;   
+    }
+    /*Condifgura o titulo da seção de produtos*/
+    .produtos__botao {
+        grid-column: 2;  
+    }
+
+    /*Devine o espaçamento minimo que os elementos tem que ter dentro do footer e ja adiciona o background do fale conosco*/
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+        padding: 64px 152px;
+        background-color: #EAF2FD;
+    }
+
+    .lista__link {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 112px;
+    }
+
+    .logo__rodape {
+        grid-row: span 6;
+    }
 }
