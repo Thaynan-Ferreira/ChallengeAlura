@@ -23,8 +23,11 @@
     height: 40px;
     background-color: #FFFFFF;
     border: 1px solid #2A7AE4;
+}
+.botao__login a {
     color: #2A7AE4;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .pesquisa {
